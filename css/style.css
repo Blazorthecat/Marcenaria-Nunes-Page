@@ -1,0 +1,139 @@
+:root {
+    --primary: #5D4037;
+    --secondary: #8D6E63;
+    --light: #D7CCC8;
+    --dark: #3E2723;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.btn.btn-orcamento {
+    background-color: #4B2E1E !important;
+    color: #fff !important;
+    border-color: #4B2E1E !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 1px #F3E7D1;
+}
+
+.btn.btn-orcamento:hover {
+    background-color: #3a2418 !important;
+    border-color: #3a2418 !important;
+    box-shadow: 0 0 0 2px #F3E7D1;
+}
+
+
+.navbar {
+    transition: all 0.3s;
+}
+.navbar.scrolled {
+    background-color: var(--dark) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+
+.card {
+    transition: transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 550px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.img-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.img-quadrada {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+body {
+  background-color: #f4e2cd;
+  color: #3b2e1e;
+}
+
+.bg-logo{
+  background-color: #f4e2cd;
+  color: #3b2e1e;
+}
+
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: white;
+border-radius: 50%;
+padding: 15px;
+font-size: 24px;
+z-index: 1000;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.whatsapp-float:hover {
+background-color: #1ebe5d;
+}
+
+.whatsapp-tooltip {
+position: absolute;
+bottom: 70px;
+right: -10px;
+background-color: #25D366;
+color: #ffffff;
+padding: 8px 14px;
+border-radius: 20px;
+font-size: 14px;
+white-space: nowrap;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}

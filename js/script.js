@@ -1,4 +1,3 @@
-// Navbar scroll effect
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
     if (window.scrollY > 100) {
@@ -8,7 +7,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Ativa tooltips
 const tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
 );
